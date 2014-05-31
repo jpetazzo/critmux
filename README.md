@@ -2,6 +2,8 @@
 
 This is a tech demo of [CRIU] and [Docker] integration, featuring [tmux].
 
+See it live in this [ASCII video demo]!
+
 1. ``docker run -t -i --privileged --name critmux jpetazzo/critmux``
 2. Do stuff in tmux. Don't know what to do? Just type a few characters.
 3. From another terminal, ``docker stop critmux``. Container stops.
@@ -26,6 +28,7 @@ In other words, when detaching from tmux, or when sending ``SIGTERM``,
 or when doing ``docker stop`` on the container, we end up saving its
 state.
 
+[ASCII video demo]: https://asciinema.org/a/9889
 [CRIU]: http://criu.org/
 [Docker]: http://www.docker.com/
 [tmux]: http://tmux.sourceforge.net/ 
