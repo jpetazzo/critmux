@@ -28,6 +28,14 @@ In other words, when detaching from tmux, or when sending ``SIGTERM``,
 or when doing ``docker stop`` on the container, we end up saving its
 state.
 
+## Requirements
+
+You need a fairly recent kernel. Debian's 3.14 works; some people
+reported that 3.13 didn't.
+
+AUFS won't work.
+
+
 [ASCII video demo]: https://asciinema.org/a/9889
 [CRIU]: http://criu.org/
 [Docker]: http://www.docker.com/
